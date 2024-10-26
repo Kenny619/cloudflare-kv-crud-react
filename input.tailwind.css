@@ -1,0 +1,94 @@
+@import url("https://fonts.cdnfonts.com/css/satoshi");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--gradient: #00416a;
+		--background: 216 100% 98.42%;
+		--foreground: 216 10% 0.84%;
+
+		--muted: 216 10% 92.1%;
+		--muted-foreground: 216 5% 42.1%;
+
+		--popover: 216 10% 92.1%;
+		--popover-foreground: 216 10% 1.05%;
+
+		--card: 216 10% 92.1%;
+		--card-foreground: 216 10% 1.05%;
+
+		--border: 216 15% 89.84%;
+		--input: 216 15% 89.84%;
+
+		--primary: 216 100% 21%;
+		--primary-foreground: 216 2% 92.1%;
+
+		--secondary: 216 5% 96.05%;
+		--secondary-foreground: 216 7% 12.1%;
+
+		--accent: 216 5% 96.05%;
+		--accent-foreground: 216 7% 12.1%;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 0 0% 98%;
+
+		--ring: 216 100% 21%;
+
+		--radius: 0.2rem;
+	}
+	.dark {
+		--gradient: #3ca55c;
+
+		--background: 147 30.549999999999997% 3.52%;
+		--foreground: 147 4.699999999999999% 97.2%;
+
+		--muted: 147 23.5% 13.2%;
+		--muted-foreground: 147 4.699999999999999% 54.4%;
+
+		--popover: 147 55.6% 5.72%;
+		--popover-foreground: 147 4.699999999999999% 97.2%;
+
+		--card: 147 55.6% 5.72%;
+		--card-foreground: 147 4.699999999999999% 97.2%;
+
+		--border: 147 23.5% 13.2%;
+		--input: 147 23.5% 13.2%;
+
+		--primary: 147 47% 44%;
+		--primary-foreground: 147 4.699999999999999% 97.2%;
+
+		--secondary: 147 23.5% 13.2%;
+		--secondary-foreground: 147 4.699999999999999% 97.2%;
+
+		--accent: 147 23.5% 13.2%;
+		--accent-foreground: 147 4.699999999999999% 97.2%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 147 4.699999999999999% 97.2%;
+
+		--ring: 147 47% 44%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+		font-feature-settings: "rlig" 1, "calt" 1;
+		font-family: "Satoshi", sans-serif;
+		letter-spacing: 0.03rem;
+		.lucide {
+			width: 1em;
+			height: 1em;
+			stroke-width: 1;
+		}
+
+		.lucide * {
+			vector-effect: non-scaling-stroke;
+		}
+	}
+}
